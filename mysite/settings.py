@@ -27,7 +27,7 @@ if SECRET_KEY is None:
     raise Exception('SECRET_KEY is required')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', True)
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = []
 
